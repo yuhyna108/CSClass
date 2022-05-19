@@ -7,6 +7,7 @@ namespace CSClass
         int carNumber;
         DateTime inTime;
         DateTime outTime;
+
         public void SetTime()
         {
             this.inTime = DateTime.Now;
