@@ -22,6 +22,18 @@ namespace CSClass
             Console.WriteLine(random.Next(10, 100));
 
             Console.WriteLine(random.NextDouble()*10);
+
+            List<int> list = new List<int>();
+            list.Add(52);
+            list.Add(273);
+            list.Add(32);
+            list.Add(64);
+
+            foreach(var item in list)
+            {
+                Console.WriteLine("Count : " + list.Count + "\titem : " + item);
+            }
         }
+
     }
 }
