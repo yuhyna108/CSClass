@@ -46,6 +46,16 @@ namespace CSClass
             Console.WriteLine(Math.PI);
 
             Hamburger nyam = new Hamburger(); // 클래스명과 파일명이 달라도된다. | 자바는 다르면 안됨
+
+            Product productA = new Product();
+            productA.name = "포켓몬빵";
+            productA.price = 1500;
+
+            //인스턴스 변수를 생성과 동시에 초기화(C# 고유 문법)
+            Product productB = new Product() { name = "소금빵", price=2000};
+            Product productC = new Product() { price=5500, name="당근케이크"};
+            Product productD = new Product() { name="보름달" };
+
         }
 
     }
