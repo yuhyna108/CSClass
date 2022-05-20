@@ -44,6 +44,8 @@ namespace CSClass
             Console.WriteLine(Math.Min(52, 273));
             Console.WriteLine(Math.Round(52.273));
             Console.WriteLine(Math.PI);
+
+            Hamburger nyam = new Hamburger(); // 클래스명과 파일명이 달라도된다. | 자바는 다르면 안됨
         }
 
     }
