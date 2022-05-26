@@ -25,12 +25,12 @@ namespace CSClass
         /// 자동차 입차 시간을 지정합니다
         /// </summary>
 
-        public void SetTime()
+        public void SetInTime()
         {
             this.inTime = DateTime.Now;
         }
 
-        public void SetoutTime()
+        public void SetOutTime()
         {
             this.outTime = DateTime.Now;
         }

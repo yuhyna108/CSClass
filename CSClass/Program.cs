@@ -56,6 +56,60 @@ namespace CSClass
             Product productC = new Product() { price=5500, name="당근케이크"};
             Product productD = new Product() { name="보름달" };
 
+            /* List<Student> students = new List<Student>();
+             students.Add(new Student() { name = "유현아", grade = 1 });
+             students.Add(new Student() { name = "최승철", grade = 2 });
+             students.Add(new Student() { name = "윤정한", grade = 2 });
+             students.Add(new Student() { name = "홍지수", grade = 2 });
+             students.Add(new Student() { name = "문준희", grade = 3 });
+             students.Add(new Student() { name = "권순영", grade = 3 });
+             students.Add(new Student() { name = "전원우", grade = 3 });
+             students.Add(new Student() { name = "이지훈", grade = 4 });
+             students.Add(new Student() { name = "서명호", grade = 4 });
+             students.Add(new Student() { name = "김민규", grade = 4 });
+             students.Add(new Student() { name = "이석민", grade = 5 });
+             students.Add(new Student() { name = "부승관", grade = 5 });
+             students.Add(new Student() { name = "최한솔", grade = 5 });
+             students.Add(new Student() { name = "이  찬", grade = 6 });*/
+
+            List<Student> students = new List<Student>()
+            {
+                new Student() { name = "유현아", grade = 1 },
+                new Student() { name = "최승철", grade = 2 },
+                new Student() { name = "윤정한", grade = 2 },
+                new Student() { name = "홍지수", grade = 2 },
+                new Student() { name = "문준희", grade = 3 },
+                new Student() { name = "권순영", grade = 3 },
+                new Student() { name = "전원우", grade = 3 },
+                new Student() { name = "이지훈", grade = 2 },
+                new Student() { name = "서명호", grade = 2 },
+                new Student() { name = "김민규", grade = 2 },
+                new Student() { name = "이석민", grade = 1 },
+                new Student() { name = "부승관", grade = 1 },
+                new Student() { name = "최한솔", grade = 2 },
+                new Student() { name = "이  찬", grade = 1 },
+            };
+
+            /*foreach (var item in students)
+            {
+                if (item.grade > 2)
+                {
+                    students.Remove(item);
+                }
+            }*/
+            for(int i=0; i<students.Count; i++)
+            {
+                if(students[i].grade > 2)
+                {
+                    students.RemoveAt(i);
+                    //students.Remove(students[i]);
+                    i--;
+                }
+            }
+            foreach (var item in students)
+            {
+                Console.WriteLine(item);
+            }
         }
 
     }
