@@ -39,6 +39,13 @@ namespace CSClass
                 output *= i;
             }
             return output;
+            some(); // static메소드 접근가능
+        }
+
+        static public void some()
+        {
+            //this.Multiply(1, 10); 일반메소드 접근 불가능
+
         }
     }
 }
