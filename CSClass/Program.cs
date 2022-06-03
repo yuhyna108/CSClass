@@ -8,6 +8,27 @@ namespace CSClass
 {
     internal class Program
     {
+        /*class MyMath
+        {
+            public static int Abs(int input)
+            {
+                if (input < 0) { return -input; }
+                else { return input; }
+            }
+
+            public static double Abs(double input)
+            {
+                if (input < 0) { return input; }
+                else { return input; }
+            }
+
+            public static long Abs(long input)
+            {
+                if (input < 0) { return -input; }
+                else { return input; }
+            }
+        }*/
+
         static void Main(string[] args)
         {
             Car car = new Car(); //Alt + Enter
@@ -115,6 +136,33 @@ namespace CSClass
             Console.WriteLine(method.Multi(52.1, 273));
             Console.WriteLine(method.Sum(1,100));
             Console.WriteLine(method.Multiply(1,10));
+
+            //int
+            Console.WriteLine(MyMath.Abs(52));
+            Console.WriteLine(MyMath.Abs(-273));
+
+            //doouble
+            Console.WriteLine(MyMath.Abs(52.273));
+            Console.WriteLine(MyMath.Abs(-32.103));
+
+            //long
+            Console.WriteLine(MyMath.Abs(21474836470));
+            Console.WriteLine(MyMath.Abs(-21474836470));
+
+            Sample sample = new Sample();
+
+            Box1 box1 = new Box1(10, 10);
+            box1.width = -10;
+            Console.WriteLine("box1의 면적은 : " + box1.Area());
+
+            Box2 box2 = new Box2(10, 10);
+            box2.setWidth(-10);
+            Console.WriteLine("box2의 면적은 : " + box2.Area());
+
+            Box box = new Box(10, 10);
+            box.Width = -10;
+            Console.WriteLine("box의 면적은 : " + box.Area);
+
         }
 
     }
