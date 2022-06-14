@@ -168,6 +168,23 @@ namespace CSClass
             //Console.WriteLine(Fibonacci.Get(100));
             //Console.WriteLine(Fibonacci.Get(1000));
 
+            foreach(var item in animals)
+            {
+                item.Eat();
+                item.Sleep();
+
+                var dog = item as dog;
+                if (dog!= null) { dog.Bark; }
+
+                var cat = item as cat;
+                if (cat != null) { cat.Meow(); }
+                else if(item is cat)
+                {
+                    Cat cat = (cat)item;
+                    cat.Meow();
+                }
+            }
+
         }
 
     }
